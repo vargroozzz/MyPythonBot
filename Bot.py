@@ -38,6 +38,7 @@ if __name__ == '__main__':
 '''
 import requests  
 import datetime
+from time import sleep
 
 class BotHandler:
 
@@ -67,7 +68,7 @@ class BotHandler:
             last_update = get_result[len(get_result)]
 
         return last_update
-
+'''
 greet_bot = BotHandler(token)  
 greetings = ('здравствуй', 'привет', 'ку', 'здорово')  
 now = datetime.datetime.now()
@@ -107,3 +108,4 @@ if __name__ == '__main__':
         main()
     except KeyboardInterrupt:
         exit()
+'''
